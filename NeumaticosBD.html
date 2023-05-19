@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crear Objeto Neumático</title>
+  <script src="./ajax.js"></script>
+  <script src="./manejadora.js"></script>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 5px;
+      margin: 10px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    label {
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="file"] {
+      width: 250px;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Crear Objeto Neumatico</h1>
+    <form action="crear_neumatico.php" method="POST" enctype="multipart/form-data">
+      <label for="marca">Marca:</label>
+      <input type="text" id="marca" name="marca" required>
+      
+      <label for="medidas">Medidas:</label>
+      <input type="text" id="medidas" name="medidas" required>
+      
+      <label for="precio">Precio:</label>
+      <input type="text" id="precio" name="precio" required>
+      
+      <label for="id">ID:</label>
+      <input type="text" id="id" name="id">
+      
+      <label for="foto">Foto:</label>
+      <input type="file" id="foto" name="foto">
+
+      <img id="imgFoto" height="100px" width="300px" />
+
+      <input type="button" value="Agregar" onclick="LaboParcial.Manejadora.AgregarNeumatico()">
+      <input type="button" value="Listar" onclick="LaboParcial.Manejadora.MostrarNeumaticos()">
+      <input type="button" id="btn-modificar" value="Modificar" onclick="LaboParcial.Manejadora">
+      <input type="button" value="verificar" onclick="LaboParcial.Manejadora.VerificarNeumaticoBD()">
+      <input type="button" value="neumaticos_borrados" onclick="LaboParcial.Manejadora.MostrarNeumaticosBorrados()">
+      <input type="button" value="neumaticos_borradosJSON" onclick="LaboParcial.Manejadora.MostrarNeumaticosBorradosJSON()">
+      <input type="button" value="mostrarFotosDeModificados" onclick="LaboParcial.Manejadora.MostrarFotosModificados()">
+    </form>
+  </div>
+  <div class="container">
+    <div id="divTabla">
+    tabla aqu&iacute;...
+   </div>
+</div>
+</body>
+</html>

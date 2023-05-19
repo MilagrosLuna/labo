@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario</title>
+  <script src="./ajax.js"></script>
+  <script src="./manejadora.js"></script>
+  <style>
+    body {
+      background-color: rgba(217, 217, 227, .8);
+      border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+      border-radius: 9999px;
+      border-width: 1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      border-width: 1px;
+      border: 1px solid black;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .input-field {
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Formulario</h1>
+    <div class="input-field">
+      <label for="marca">Marca:</label>
+      <input type="text" id="marca">
+    </div>
+    <div class="input-field">
+      <label for="medidas">Medidas:</label>
+      <input type="text" id="medidas">
+    </div>
+    <div class="input-field">
+      <label for="precio">Precio:</label>
+      <input type="text" id="precio">
+    </div>
+    <button class="btn" onclick="LaboParcial.Manejadora.AgregarNeumaticoJSON()">Agregar</button>
+    <button class="btn" onclick="LaboParcial.Manejadora.MostrarNeumaticoJSON()">Mostrar</button>
+    <button class="btn" onclick="LaboParcial.Manejadora.VerificarNeumaticoJSON()">Verificar</button>
+  </div>
+  <div id="divTabla">
+    tabla aqu&iacute;...
+  </div>
+</body>
+
+</html>

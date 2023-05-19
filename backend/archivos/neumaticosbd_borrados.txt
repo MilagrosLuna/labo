@@ -1,0 +1,5 @@
+El id:6,La marca:FateO,Las medidas:195-55-R18,El precio:500999,La foto:6.FateO.borrado.153715.jpg
+El id:9,La marca:FateO,Las medidas:195-55-R18,El precio:500999,La foto:9.FateO.borrado.224541.jpg
+El id:14,La marca:adaw,Las medidas:ad,El precio:22,La foto:14.adaw.borrado.040359.jpg
+El id:11,La marca:Matienzo,Las medidas:195-55-R18,El precio:59666,La foto:11.Matienzo.borrado.040812.jpg
+El id:18,La marca:wwda,Las medidas:awd,El precio:222,La foto:18.wwda.borrado.040937.jpg
